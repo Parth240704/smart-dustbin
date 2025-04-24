@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Dustbin Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+  <!-- Login Form -->
+  <div class="login-container">
+    <h2>Smart Dustbin Login</h2>
+
+    <!-- Login Form -->
+    <form id="login-form">
+      <!-- Email input with autocomplete -->
+      <input type="email" id="email" placeholder="Enter your email" required autocomplete="email" />
+
+      <!-- Password input with autocomplete -->
+      <input type="password" id="password" placeholder="Enter your password" required autocomplete="current-password" />
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="error-text" id="error-message"></p> <!-- Error message will appear here -->
+  </div>
+
+  <!-- Firebase SDK and Script -->
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
